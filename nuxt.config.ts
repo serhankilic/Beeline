@@ -8,4 +8,11 @@ export default defineNuxtConfig({
         'nuxt-swiper',
         '@nuxtjs/google-fonts',
     ],
+    googleFonts: {
+        families: {
+            'Libre Baskerville+serif': true,
+            Roboto: true,
+            'Great Vibes': true,
+        },
+    },
 })

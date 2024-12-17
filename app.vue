@@ -1,6 +1,11 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+    <div>Selam</div>
 </template>
+<style>
+div {
+    font-family:
+        Libre Baskerville,
+        serif;
+    font-size: 20px;
+}
+</style>
