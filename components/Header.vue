@@ -1,5 +1,6 @@
 <script setup>
 import Navbar from '~/components/Navbar.vue'
+import HeaderContent from '~/components/HeaderContent.vue'
 </script>
 <template>
     <div class="main-header">
@@ -8,6 +9,7 @@ import Navbar from '~/components/Navbar.vue'
                 <Navbar />
             </div>
         </nav>
+        <HeaderContent />
     </div>
 </template>
 <style>

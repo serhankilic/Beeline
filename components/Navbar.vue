@@ -30,11 +30,13 @@
 .navbar-main-container {
     display: flex;
     flex-direction: row;
+    position: relative;
     .navbar-left-area {
         width: 50%;
         padding: 0 30px;
         height: 70px;
         border-bottom: 1px solid dimgray;
+        position: relative;
         .links {
             display: flex;
             align-items: center;
@@ -79,13 +81,26 @@
     }
     .bg-header {
         width: 50%;
+        right: 0;
+        top: 0;
         max-width: 750px;
         min-width: 550px;
         height: 100vh;
-        background: #a67c52;
         display: flex;
         justify-content: flex-end;
         padding: 30px 30px;
+        position: absolute;
+        background-image: url('/gallery/header-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        filter: contrast(120%) grayscale(0.3);
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            filter: contrast(120%);
+        }
         a {
             color: white;
             border: 1px solid white;
