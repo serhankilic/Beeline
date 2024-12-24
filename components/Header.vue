@@ -27,7 +27,7 @@ import ReservationBox from '~/components/ReservationBox.vue'
     .reservation-form {
         position: relative;
         z-index: 2;
-        margin-top: 3rem;
+        margin-top: 1.5rem;
         margin-left: 4rem;
     }
 }

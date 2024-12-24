@@ -24,7 +24,7 @@
                 </div>
                 <ul v-if="isDropdownOpen" class="dropdown-menu">
                     <li
-                        v-for="n in 10"
+                        v-for="n in 5"
                         :key="n"
                         @click="selectNumberOfPeople(n)"
                     >
@@ -83,7 +83,7 @@ export default {
     height: 130px;
     justify-content: center;
     padding: 0.4rem 1rem 0;
-    border: 2px solid gray;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     .reservation-fields {
         height: 100%;
         display: flex;
@@ -108,13 +108,13 @@ label {
 }
 
 input {
-    width: 250px;
+    border-top: 1px solid rgba(82, 82, 82, 0.43);
+    width: 150px;
     padding: 0.5rem;
     font-size: 1rem;
-    border-radius: 0.25rem;
-    border: 1px solid red;
     background-color: transparent;
     color: rgba(82, 82, 82, 0.73);
+    cursor: pointer;
 }
 
 .dropdown {
@@ -122,34 +122,39 @@ input {
 }
 
 .dropdown-trigger {
-    width: 250px;
+    border-top: 1px solid rgba(82, 82, 82, 0.43);
+    width: 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid rebeccapurple;
-    border-radius: 0.25rem;
     color: rgba(82, 82, 82, 0.73);
 }
 
 .dropdown-menu {
     position: absolute;
-    top: 100%;
+    display: flex;
+    flex-direction: row;
+    top: 80px;
     left: 0;
     z-index: 10;
     background: #fff;
     border: 1px solid #ccc;
-    border-radius: 0.25rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .dropdown-menu li {
+    justify-content: center;
+    width: 150px;
     padding: 0.5rem;
     cursor: pointer;
     text-align: center;
@@ -167,6 +172,7 @@ input {
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
+    transition: 0.3s all ease;
 }
 
 .book-button:hover {

@@ -3,7 +3,7 @@
         <div class="navbar-left-area">
             <div class="links">
                 <div class="logo">
-                    <a href="#">
+                    <a href="#" class="logo-link">
                         Hotel
                         <span>Beeline</span>
                     </a>
@@ -34,17 +34,20 @@
     .navbar-left-area {
         width: 50%;
         padding: 0 30px;
-        height: 70px;
+        height: 80px;
         border-bottom: 1px solid dimgray;
         position: relative;
         .links {
             display: flex;
             align-items: center;
             justify-content: space-evenly;
+            height: 100%;
             .logo {
-                margin-bottom: 10px;
                 display: flex;
-                a {
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                a.logo-link {
                     color: black;
                     font-size: 20px;
                     display: flex;
@@ -68,14 +71,10 @@
                 }
             }
             .navlink {
+                height: fit-content;
                 font-size: 16px;
                 font-weight: 500;
-                border-bottom: 1px solid transparent;
-                margin-top: 20px;
                 transition: 0.35s all ease;
-            }
-            .navlink:hover {
-                border-bottom: 1px solid #a67c52;
             }
         }
     }
