@@ -68,7 +68,7 @@
                 }
             }
             .navlink {
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 500;
                 border-bottom: 1px solid transparent;
                 margin-top: 20px;
@@ -94,13 +94,6 @@
         background-size: cover;
         background-position: center;
         filter: contrast(120%) grayscale(0.3);
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            filter: contrast(120%);
-        }
         a {
             color: white;
             border: 1px solid white;

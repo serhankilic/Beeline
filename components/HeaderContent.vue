@@ -12,10 +12,10 @@
     width: 50%;
     display: flex;
     justify-content: center;
-    margin-top: 5rem;
-    line-height: 85px;
+    margin-top: 4rem;
+    line-height: 90px;
     p {
-        font-size: 4.8em;
+        font-size: 6em;
         font-family: Libre Baskerville serif;
         span {
             font-family: Great Vibes;
